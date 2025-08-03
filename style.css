@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+.dice {
+    font-size: 7rem;
+    margin: 5px;
+}
+
+button {
+    background-color: #3B82F6;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+button:hover {
+    background-color: #2563EB;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 2rem auto;
+    max-width: 600px;
+}
+
+li {
+    font-size: 1.5rem;
+    padding: .5rem;
+    margin: .5rem;
+    background-color: #eef6ff;
+    /* Adds a subtle shadow below the element: 
+                                           0px horizontal offset, 
+                                           2px vertical offset, 
+                                           2px blur radius, 
+                                           semi-transparent black color (30% opacity) */
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+li span{
+    font-size: 3rem;
+    margin-right: 1rem;
+
+}
