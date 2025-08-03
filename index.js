@@ -3,8 +3,11 @@ console.log("Javascript loaded ...");
 const rollDiceButton = document.getElementById("roll-button");
 const mainDice = document.getElementById("dice");
 const rollHistory = document.getElementById("roll-history");
+const sumValue = document.getElementById("sum-value");
+
 
 let historyList = [];
+
 
 function rollDice() {
     const rollResult = Math.floor(Math.random() * 6) + 1;
@@ -12,6 +15,7 @@ function rollDice() {
     mainDice.innerHTML = diceFace;
     historyList.push(rollResult);
     updateRollHistory();
+    updateSum();
 }
 
 function updateRollHistory() {
@@ -24,6 +28,9 @@ function updateRollHistory() {
         rollHistory.appendChild(listItem);
     }
 }
+
+const updateSum = () => sumValue.innerHTML = historyList.reduce((a, b) => a + b, 0);
+
 
 function getDiceFace(rollResult) {
 
